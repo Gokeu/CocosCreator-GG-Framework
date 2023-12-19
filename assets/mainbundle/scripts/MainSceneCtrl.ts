@@ -1,3 +1,4 @@
+import UserMgr from "../../gamebundle/scripts/user/UserMgr";
 import { gg } from "../../scripts/framework/gg";
 import AssetLoader from "../../scripts/framework/lib/asset/AssetLoader";
 import { BundleConfigs } from "./configs/BundleConfigs";
@@ -23,14 +24,17 @@ export default class MainSceneCtrl extends cc.Component {
     async start() {
         // 加载 Bundle
         await AssetLoader.loadBundle(BundleConfigs.GameBundle);
-        await AssetLoader.loadBundle(BundleConfigs.CommonBundle)
+        await AssetLoader.loadBundle(BundleConfigs.CommonBundle);
 
         // 加载启动页
         await gg.panelRouter.loadAsync(PanelConfigs.bootPanel);
 
-        // 打开启动页
-        gg.panelRouter.show({
-            panel: PanelConfigs.bootPanel,
+        UserMgr.inst.init(() => {
+            // 打开启动页
+            gg.panelRouter.show({
+                panel: PanelConfigs.bootPanel,
+            });
         });
+
     }
 }

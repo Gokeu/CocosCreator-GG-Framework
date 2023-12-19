@@ -218,7 +218,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "7a0LXzMV9NJbhmozQ65pxZ",
     "sync": false
@@ -327,7 +327,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
+      "width": 240,
       "height": 75.6
     },
     "_anchorPoint": {
@@ -406,8 +406,8 @@
     ],
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "_string": "游戏启动页",
-    "_N$string": "游戏启动页",
+    "_string": "怪物合成",
+    "_N$string": "怪物合成",
     "_fontSize": 60,
     "_lineHeight": 60,
     "_enableWrapText": true,
@@ -430,7 +430,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "82lYOm0qNPhIvlNqr4uHQ6",
     "sync": false
@@ -609,7 +609,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "aaIxXb3chGnoscmUAwPtWM",
     "sync": false
@@ -787,7 +787,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "4b548u4I5KwrR/v/FiF0nG",
     "sync": false
@@ -847,7 +847,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "91k6pJq7ZE0p4Qxol8Squ+",
     "sync": false
@@ -890,7 +890,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "f4fLem0DRNTLrd7GiQkDTM",
     "sync": false
@@ -1075,7 +1075,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "87gBxuTmZEbpdo4327WjvA",
     "sync": false
@@ -1183,7 +1183,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "f5GxzxjZpAVLiIWXE/bxzI",
     "sync": false
@@ -1291,7 +1291,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "32+3jo/yxCHZgn/8chpuus",
     "sync": false
@@ -1361,7 +1361,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "5d7rLBo2ZKcIwisaVHALKi",
     "sync": false
@@ -1382,7 +1382,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "4au+zxMS5ISLfpXC90VX0H",
     "sync": false
@@ -1446,7 +1446,7 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "f80e97c1-8848-4f5b-9c9b-e0db644d5604"
+      "__id__": 0
     },
     "fileId": "",
     "sync": false

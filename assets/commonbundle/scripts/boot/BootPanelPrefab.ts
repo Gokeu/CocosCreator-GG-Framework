@@ -37,18 +37,18 @@ export default class BootPanelPrefab extends PanelComponent {
     private async _initGame() {
         // 初始化游戏设置
         this._onLoadProgressChanged(0.1, "加载游戏设置...");
-        GameSettingModule.initSettingConfig();
+        // GameSettingModule.initSettingConfig();
 
         // 提前加载通用弹窗面板
         this._onLoadProgressChanged(0.2, "加载游戏资源...");
-        await gg.panelRouter.loadAsync(PanelConfigs.loadingPanel);
+        // await gg.panelRouter.loadAsync(PanelConfigs.loadingPanel);
 
         this._onLoadProgressChanged(0.3, "加载游戏资源...");
-        await gg.panelRouter.loadAsync(PanelConfigs.toastPanel);
+        // await gg.panelRouter.loadAsync(PanelConfigs.toastPanel);
 
         // 加载游戏设置面板
         this._onLoadProgressChanged(0.4, "加载游戏资源...");
-        await gg.panelRouter.loadAsync(PanelConfigs.gameSettingPanel);
+        // await gg.panelRouter.loadAsync(PanelConfigs.gameSettingPanel);
 
         // 加载游戏主面板
         this._onLoadProgressChanged(0.5, "加载游戏资源...");

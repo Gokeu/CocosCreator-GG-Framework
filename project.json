@@ -3,6 +3,7 @@
   "packages": "packages",
   "name": "CocosCreator-GG-Framework",
   "id": "d706123b-c866-48df-9860-128afd9857c1",
-  "version": "2.4.3",
-  "isNew": false
+  "version": "2.4.9",
+  "isNew": false,
+  "description": "Cocos Creator Go Game Framework"
 }

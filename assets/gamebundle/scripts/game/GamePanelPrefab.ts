@@ -3,6 +3,8 @@ import { ToastPanelShowArgs } from "../../../commonbundle/scripts/popwindow/Toas
 import { PanelConfigs } from "../../../mainbundle/scripts/configs/PanelConfigs";
 import { gg } from "../../../scripts/framework/gg";
 import { PanelComponent, PanelHideOption, PanelShowOption } from "../../../scripts/framework/lib/router/PanelComponent";
+import Mining from "./Mining";
+import Monster from "./Monster";
 
 const { ccclass, property } = cc._decorator;
 
@@ -14,11 +16,57 @@ const { ccclass, property } = cc._decorator;
  */
 @ccclass
 export default class GamePanelPrefab extends PanelComponent {
-    // @property(cc.Node)
-    // bgNode: cc.Node = null;
+    @property(cc.Node)
+    coinBg: cc.Node = null;
 
-    // @property(cc.Node)
-    // loadingSpriteNode: cc.Node = null;
+    @property(cc.Node)
+    brickBg: cc.Node = null;
+
+    @property(cc.Node)
+    deleteNode: cc.Node = null;
+
+    @property(cc.Node)
+    buyBtn: cc.Node = null;
+
+    @property(cc.Node)
+    autoSynBtn: cc.Node = null;
+
+    @property(cc.Node)
+    changeViewBtn: cc.Node = null;
+
+    @property(cc.Node)
+    UITexts: cc.Node = null;
+
+    @property(cc.Node)
+    nailDownBtn: cc.Node = null;
+
+    @property(Monster)
+    monster: Monster = null;
+
+    @property(Mining)
+    mining: Mining = null;
+
+    curView: ViewEnum = ViewEnum.Mining;
+
+    protected onLoad(): void {
+        this.curView = ViewEnum.Mining;
+    }
+
+    protected start(): void {
+        this.updateInfo();
+        this.initData()
+        this.initView();
+    }
+
+    initData() {
+        this.mining.initData();
+        this.monster.initData();
+    }
+
+    initView() {
+        this.monster.initView();
+        this.mining.initView();
+    }
 
     show(option: PanelShowOption): void {
         option.onShowed();
@@ -35,37 +83,31 @@ export default class GamePanelPrefab extends PanelComponent {
         // });
     }
 
-    onShowToastPanelBtnClick() {
-        //   // 提前加载 Pop 弹窗面板
-        //   await gg.panelRouter.loadAsync(Panels.loadingPanel);
-        //   await gg.panelRouter.loadAsync(Panels.toastPanel);
-        gg.panelRouter.show({
-            panel: PanelConfigs.toastPanel,
-            data: <ToastPanelShowArgs>{
-                text: "短Toast测试",
-            },
-        });
+
+    onNailDownBtnClick() {
+
     }
 
-    onShowLoadingPanelBtnClick() {
-        // 打开面板弹窗
-        gg.panelRouter.show({
-            panel: PanelConfigs.loadingPanel,
-            data: <LoadingPanelShowArgs>{
-                playShowAnim: true,
-                onCancelLoadingBtnClick: () => {
-                    gg.panelRouter.hide({
-                        panel: PanelConfigs.loadingPanel,
-                    });
-                },
-            },
-            onShowed: () => {},
-        });
+    onBuyBtnClick() {
+
     }
 
-    onShowGameSettingPanelBtnClick() {
-        gg.panelRouter.show({
-            panel: PanelConfigs.gameSettingPanel,
-        });
+    autoSynBtnClick() {
+
     }
+
+    onChangeViewBtnClick() {
+        let miningChanged = this.curView === ViewEnum.Mining ? -1 : 1;
+        let tween = cc.tween().to(2, { x: 750 * miningChanged })
+        cc.tween(this.mining.node).then(tween).start();
+        cc.tween(this.monster.node).then(tween).start();
+    }
+
+
+    updateInfo() {
+
+    }
+
+
+
 }

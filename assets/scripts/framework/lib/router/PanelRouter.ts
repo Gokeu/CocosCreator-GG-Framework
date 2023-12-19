@@ -504,24 +504,15 @@ export interface CommonPanelOption {
 export interface ShowPanelOption extends CommonPanelOption {
     /**
      * 展示动画播完完毕之后回调（如果没有展示动画，则立即回调）
-     *
+     * @param error 隐藏错误时，此参数存在
      */
-    onShowed?(
-        /**
-         * 展示错误时，此参数存在
-         */
-        error?: Error
-    ): void;
+    onShowed?(error?: Error): void;
 }
 
 export interface HidePanelOption extends CommonPanelOption {
     /**
      * 隐藏动画播完完毕之后回调（如果没有隐藏动画，则立即回调）
+     * @param error 隐藏错误时，此参数存在
      */
-    onHided?(
-        /**
-         * 隐藏错误时，此参数存在
-         */
-        error?: Error
-    ): void;
+    onHided?(error?: Error): void;
 }

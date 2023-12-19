@@ -26,4 +26,8 @@ export interface LocalStorageInterface {
      * @param key 待移除key
      */
     removeItem(key: string): void;
+
+
+
+    clear(): void;
 }

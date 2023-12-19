@@ -1,6 +1,7 @@
 {
-  "ver": "2.3.5",
+  "ver": "2.3.7",
   "uuid": "ba999a84-3560-4693-b7ac-e9479a6a44d8",
+  "importer": "texture",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -12,8 +13,9 @@
   "platformSettings": {},
   "subMetas": {
     "common_radio_button_off": {
-      "ver": "1.0.4",
+      "ver": "1.0.6",
       "uuid": "102e562f-46e4-474a-833f-8077f92fdc42",
+      "importer": "sprite-frame",
       "rawTextureUuid": "ba999a84-3560-4693-b7ac-e9479a6a44d8",
       "trimType": "auto",
       "trimThreshold": 1,

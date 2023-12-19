@@ -5,9 +5,9 @@
  * @created 2020-11-28 10:27:10
  */
 export default class BundleLoader {
-    static load<T extends cc.Asset>(bundle: cc.AssetManager.Bundle, path: string, type?: typeof cc.Asset): Promise<T> {
+    static load<T extends cc.Asset>(bundle: string, path: string, type?: typeof cc.Asset): Promise<T> {
         return new Promise<T>((resolve, reject) => {
-            bundle.load(path, type, (error: Error, asset: T) => {
+            cc.assetManager.getBundle(bundle).load(path, type, (error: Error, asset: T) => {
                 error ? reject(error) : resolve(asset);
             });
         });
